@@ -1,0 +1,156 @@
+<!-- 
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Panier</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div class="panier">
+    <h1>Mon Panier</h1>
+
+    <div class="item">
+      <span>Produit 1</span>
+      <span>20 €</span>
+    </div>
+    <div class="item">
+      <span>Produit 2</span>
+      <span>35 €</span>
+    </div>
+    <div class="item">
+      <span>Produit 3</span>
+      <span>15 €</span>
+    </div>
+
+    <div class="total">Total : 70 €</div>
+
+    <button>Passer la commande</button>
+  </div>
+
+</body>
+</html>
+-->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mon Panier - Vintage Sport Area</title>
+  <link rel="stylesheet" href="styles.css" /> <!-- Ton CSS existant -->
+  <style>
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 40px 20px;
+      background-color: #f0e5d8;
+      border-radius: 12px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 32px;
+      color: #111;
+      margin-bottom: 30px;
+    }
+
+    .panier-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 0;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .panier-item:last-child {
+      border-bottom: none;
+    }
+
+    .panier-item img {
+      width: 80px;
+      height: auto;
+      border-radius: 6px;
+    }
+
+    .details {
+      flex: 1;
+      margin-left: 20px;
+    }
+
+    .details h3 {
+      margin: 0 0 5px;
+    }
+
+    .prix {
+      font-weight: bold;
+      color: #222;
+    }
+
+    .total {
+      text-align: right;
+      font-size: 22px;
+      font-weight: bold;
+      margin-top: 20px;
+    }
+
+    .btn-commander {
+      display: block;
+      margin: 30px auto 0;
+      background-color: #ff6600;
+      color: white;
+      padding: 12px 30px;
+      font-size: 18px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      text-transform: uppercase;
+      transition: 0.3s;
+    }
+
+    .btn-commander:hover {
+      background-color: #e65c00;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header>
+    <!-- Inclure ta navbar ici si elle est commune à toutes les pages -->
+  </header>
+
+  <main class="container">
+    <h1>Mon Panier</h1>
+
+    <div class="panier-item">
+      <img src="images/1.png" alt="Maillot vintage">
+      <div class="details">
+        <h3>Maillot France 1998</h3>
+        <p>Taille : L</p>
+      </div>
+      <div class="prix">49 €</div>
+    </div>
+
+    <div class="panier-item">
+      <img src="images/2.png" alt="Maillot vintage">
+      <div class="details">
+        <h3>Maillot Chicago Bulls 1996</h3>
+        <p>Taille : M</p>
+      </div>
+      <div class="prix">59 €</div>
+    </div>
+
+    <div class="total">Total : 108 €</div>
+
+    <button class="btn-commander">Passer la commande</button>
+
+    <a href="index.html" class="btn-retour">← Retour à l'accueil</a>  </main>
+
+  <footer>
+    &copy; 2025 Vintage Sport Area - Tous droits réservés
+  </footer>
+
+
+</body>
+</html>
